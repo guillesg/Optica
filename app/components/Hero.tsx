@@ -10,7 +10,20 @@ const images = [
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
+  // Detectar tamaño de pantalla
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // Slider
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
@@ -38,8 +51,12 @@ export default function Hero() {
               backgroundImage: `url(${img})`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
-              backgroundSize: isFirst ? "contain" : "cover",
-              backgroundColor: isFirst ? "#ffffff" : "transparent",
+              backgroundSize: isFirst
+                ? isMobile
+                  ? "cover"
+                  : "contain"
+                : "cover",
+              backgroundColor: isFirst && !isMobile ? "#ffffff" : "transparent",
             }}
           />
         );

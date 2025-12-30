@@ -34,10 +34,10 @@ const serviciosHome = [
 /* Servicios completos */
 const serviciosCompletos = [
   { icon: <FaEye />, titulo: "Optometría avanzada", texto: "Evaluación completa de la salud visual." },
-  { icon: <FaGlasses />, titulo: "Lentes progresivas", texto: "Adaptación personalizada para máxima comodidad." },
-  { icon: <FaTint />, titulo: "Lentes de contacto", texto: "Adaptación y seguimiento profesional." },
-  { icon: <FaSun />, titulo: "Gafas de sol graduadas", texto: "Protección UV con corrección visual." },
-  { icon: <FaChild />, titulo: "Control visual infantil", texto: "Revisión especializada para niños." },
+  { icon: <FaGlasses />, titulo: "Lentes progresivas", texto: "Adaptación personalizada para máxima comodidad. Con garantía de adaptación" },
+  { icon: <FaTint />, titulo: "Lentes de contacto", texto: "Adaptación y seguimiento profesional. Lentes monofocales y multifocales, progresivas, Tratamiento del queratocono y control de miopía " },
+  { icon: <FaSun />, titulo: "Gafas de sol graduadas", texto: "Protección UV con corrección visual y polarizadas." },
+  { icon: <FaChild />, titulo: "Control visual infantil", texto: "Revisión especializada para niños. Lentes para control del avance de la miopía" },
   { icon: <FaMicroscope />, titulo: "Tensión ocular", texto: "Control preventivo de la presión ocular." },
   { icon: <FaRegSmile />, titulo: "Asesoramiento estético", texto: "Te ayudamos a elegir la montura ideal." },
 ];

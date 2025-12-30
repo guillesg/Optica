@@ -24,7 +24,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-optica-gray">Contacto</h3>
           <p className="mt-2">Email: info@opticasdominguezromero.com</p>
-          <p className="mt-1">Horario: L–V 9:00–18:00</p>
+          <p className="mt-1">Horario: L–V 9:00–13:30, 16:30-20:00</p>
         </div>
       </div>
 
