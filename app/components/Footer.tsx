@@ -2,7 +2,6 @@ export default function Footer() {
   return (
     <footer className="w-full bg-optica-blue text-white mt-16 py-12">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10">
-
         {/* Columna 1 */}
         <div>
           <h2 className="text-xl font-semibold">Ópticos Domínguez Romero</h2>
@@ -15,7 +14,8 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-optica-gray">Consulta</h3>
           <p className="mt-4 leading-relaxed">
-            <span className="font-semibold text-white">Gáldar:</span><br />
+            <span className="font-semibold text-white">Gáldar:</span>
+            <br />
             928 88 20 61
           </p>
         </div>
@@ -29,7 +29,20 @@ export default function Footer() {
       </div>
 
       <div className="text-center mt-10 text-optica-gray text-sm">
-        © {new Date().getFullYear()} Ópticos Domínguez Romero — Todos los derechos reservados.
+        © {new Date().getFullYear()} Ópticos Domínguez Romero — Todos los
+        derechos reservados.
+      </div>
+      <div className="text-center mt-5 text-optica-gray text-sm">
+        <small>
+          <span>Desarrollado por </span>
+          <a
+            href="https://guillermo-sosa.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Guillermo Sosa
+          </a>
+        </small>
       </div>
     </footer>
   );
